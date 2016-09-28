@@ -49,6 +49,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Platforms
+    uniqueID: 3160081019
+    locked: 0
   - name: Item_Sprites
     uniqueID: 1895902575
     locked: 0

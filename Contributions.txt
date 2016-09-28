@@ -1,0 +1,25 @@
+# Contributions of Team Members to Final Game
+# We present "Presidential Panic" - A sidescrolling shmup!
+# Team 7 - Patrick Bradley & Ryan Steelman
+
+# Design
+Game Design: Patrick and Ryan
+Level Design: Ryan
+	- Enemies: Ryan
+	- Platforms: Ryan
+	- Items: Ryan
+	- Backgrounds: Ryan
+Sprite Editing: Patrick and Ryan
+Menu Design: Ryan
+SFX/Music Selection: Ryan
+
+# Code
+Enemy AI: Patrick
+Camera Control: Patrick
+Menu Implementation: Ryan and Patrick
+All Physics Code: Patrick
+All Input Code: Patrick
+Animations: Patrick
+Win/Loss Implementation: Patrick
+SFX/Music Implementation: Ryan
+General Object Scripting: Patrick

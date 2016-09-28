@@ -197,7 +197,7 @@ public class player_s : MonoBehaviour {
             GiveShotgun();
 			GetComponent<AudioSource>().PlayOneShot (pickup);
         }
-        else if (coll.gameObject.tag == "HealthBox")
+        else if (coll.gameObject.tag == "HealthBox" && extra_lives < 9)
         {
             Destroy(coll.gameObject);
             extra_lives += 1;
@@ -245,7 +245,7 @@ public class player_s : MonoBehaviour {
         victoryScreen.SetActive(true);
     }
 
-    IEnumerator FlashSprites(SpriteRenderer[] sprites, int numTimes, float delay, bool disable = false)
+    IEnumerator FlashSprites(SpriteRenderer[] sprites, int numTimes, float delay)
     {
         // number of times to loop
         for (int loop = 0; loop < numTimes; loop++)
@@ -253,16 +253,8 @@ public class player_s : MonoBehaviour {
             // cycle through all sprites
             for (int i = 0; i < sprites.Length; i++)
             {
-                if (disable)
-                {
-                    // for disabling
-                    sprites[i].enabled = false;
-                }
-                else
-                {
-                    // for changing the alpha
-                    sprites[i].color = new Color(sprites[i].color.r, sprites[i].color.g, sprites[i].color.b, 0.5f);
-                }
+                // for changing the alpha
+                sprites[i].color = new Color(sprites[i].color.r, sprites[i].color.g, sprites[i].color.b, 0.5f);
             }
 
             // delay specified amount
@@ -271,21 +263,12 @@ public class player_s : MonoBehaviour {
             // cycle through all sprites
             for (int i = 0; i < sprites.Length; i++)
             {
-                if (disable)
-                {
-                    // for disabling
-                    sprites[i].enabled = true;
-                }
-                else
-                {
-                    // for changing the alpha
-                    sprites[i].color = new Color(sprites[i].color.r, sprites[i].color.g, sprites[i].color.b, 1);
-                }
+                // for changing the alpha
+                sprites[i].color = new Color(sprites[i].color.r, sprites[i].color.g, sprites[i].color.b, 1);
             }
 
             // delay specified amount
             yield return new WaitForSeconds(delay);
         }
     }
-
 }

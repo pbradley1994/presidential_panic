@@ -54,7 +54,12 @@ TextureImporter:
   textureType: 8
   buildTargetSettings:
   - buildTarget: Standalone
-    maxTextureSize: 8192
+    maxTextureSize: 2048
+    textureFormat: -3
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
     textureFormat: -3
     compressionQuality: 50
     allowsAlphaSplitting: 0

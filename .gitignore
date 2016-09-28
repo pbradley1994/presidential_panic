@@ -29,3 +29,9 @@ obj/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# ============= #
+# Build Folders #
+# ============= #
+build/
+windows_build/
