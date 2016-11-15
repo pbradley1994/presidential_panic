@@ -3,6 +3,8 @@
 A simple sidescrolling shoot-em-up developed as a school project.
 Developed using Unity 5.4.
 
+![Intro](/Screenshots/Intro.gif)
+
 ## Controls
 
  - WASD to move.
